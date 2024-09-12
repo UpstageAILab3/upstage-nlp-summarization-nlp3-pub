@@ -114,23 +114,31 @@
 
 ### 3.1 (영문) Encoder-Decoder 구조
 * Model: sshleifer/distilbart-cnn-12-6
-<image1>
-* Model: sshleifer/distilbart-xsum-12-3
-<image2>
-* Model: facebook/bart-large-xsum
-<image3>
-* Model: google/flan-t5-large
-<image4>
+<img width="422" alt="nlp_img1" src="https://github.com/user-attachments/assets/a6af310f-5c7d-447d-8e97-f4ac66618eac">
+
+* Model: sshleifer/distilbart-xsum-12-3 <br>
+<image2><img width="382" alt="nlp_img2" src="https://github.com/user-attachments/assets/4721dd20-33d4-4e72-9729-bf8d2e9f6a3d">
+
+* Model: facebook/bart-large-xsum <br>
+<image3><img width="406" alt="nlp_img3" src="https://github.com/user-attachments/assets/03244fa2-52e9-4e37-81cb-76f8a0ab8520">
+
+* Model: google/flan-t5-large <br>
+<image4><img width="373" alt="nlp_img4" src="https://github.com/user-attachments/assets/14700b34-b0c4-4118-a5f5-7ae8ca96266b">
+
 
 ### 3.2 (한글) Encoder-Decoder 구조
-* Model 1: digit82/kobart-summarization (파라미터 수: 123,859,968)
-<image5>
-* Model 2: eenzeenee/t5-base-korean-summarization (파라미터 수: 236,904,192)
-<image6>
-* Model 3: lcw99/t5-large-korean-text-summary (파라미터 수: 768,918,528) - 최고 성능
-<image7>
-* Model 4: traintogpb/pko-t5-large-kor-for-colloquial-summarization-finetuned (LORA 사용)
-<image8>
+* Model 1: digit82/kobart-summarization (파라미터 수: 123,859,968)<br>
+<image5><img width="551" alt="nlp_img5" src="https://github.com/user-attachments/assets/9961f6ee-7a62-4c00-b359-00d6de0776b2">
+
+* Model 2: eenzeenee/t5-base-korean-summarization (파라미터 수: 236,904,192)<br>
+<image6><img width="583" alt="nlp_img6" src="https://github.com/user-attachments/assets/7b327263-5b34-4435-b525-c6c530eaaee7">
+
+* Model 3: lcw99/t5-large-korean-text-summary (파라미터 수: 768,918,528) - 최고 성능 <br>
+<image7><img width="588" alt="nlp_img7" src="https://github.com/user-attachments/assets/76f60e83-a48b-4d59-b8da-03c0f751431a">
+
+* Model 4: traintogpb/pko-t5-large-kor-for-colloquial-summarization-finetuned (LORA 사용) <br>
+<image8><img width="591" alt="nlp_img8" src="https://github.com/user-attachments/assets/74dd91f1-e60c-437b-8416-9641c5012ca7">
+
 
 ### 3.3 Decoder Only 구조
 * Model 1: cateto/korean-gpt-neox-125M (파라미터 수: 125,065,728)
@@ -150,12 +158,15 @@
   * PEFT 모델: LoRA로 파인튜닝한 버전
 * 성능 비교: LoRA를 적용한 모델은 Original 모델보다 성능이 향상되었고 메모리 상에서 효율성이 비교적 좋다는 것을 확인하였지만 굳이 LoRA를 사용할 이유는 되지 못하였습니다.
 (성능 : Original < PEFT < Instruct model)
-  * Original model
-  <image9>
-  * Instruct model
-  <image10>
-  * PEFT model
-  <image11>
+  * Original model <br>
+  <image9><img width="451" alt="nlp_img9" src="https://github.com/user-attachments/assets/dd122bd4-d337-4fce-9fd8-dc97744f8ad4">
+
+  * Instruct model <br>
+  <image10><img width="485" alt="nlp_img10" src="https://github.com/user-attachments/assets/bb9bb768-5a7c-4421-866d-1da0a454e613">
+
+  * PEFT model <br>
+  <image11><img width="472" alt="nlp_img11" src="https://github.com/user-attachments/assets/d8a78e4e-6ba1-4ac5-a1f4-3b62b1f7660c">
+
 
 ### 3.5 주제별 모델 사용
 대화의 다양한 주제에 맞춰 *8개의 카테고리*로 데이터를 나누어 각 카테고리에 특화된 모델을 사용하는 전략을 채택했습니다. 주제별(가족, 사회, 쇼핑, 업무, 엔터, 여행, 일상 생활, 주거)로 데이터를 나누어 학습한 모델은 다음과 같은 카테고리로 구분되었습니다:
@@ -188,10 +199,12 @@
 
 ### Leader Board
 
-- 리더보드 [중간순위]
+- 리더보드 [중간순위] <br>
+<img width="518" alt="rank_mid" src="https://github.com/user-attachments/assets/3b77fa24-a826-4ca4-a0b3-fa04c9b12538">
 
 
-- 리더보드 [최종순위]
+- 리더보드 [최종순위] <br>
+<img width="518" alt="rank_last" src="https://github.com/user-attachments/assets/ec0bcf16-02f7-4d5c-95ee-a139ed62b5b9">
 
 
 - 최종 점수
